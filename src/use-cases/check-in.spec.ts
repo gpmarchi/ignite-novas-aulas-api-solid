@@ -35,7 +35,7 @@ describe('Check-in Use Case', async () => {
     })
 
     await expect(
-      await sut.execute({
+      sut.execute({
         gymId: 'gym-01',
         userId: 'user-01',
       }),
